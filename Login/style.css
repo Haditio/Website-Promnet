@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Bruno+Ace&family=Port+Lligat+Slab&family=Vollkorn+SC:wght@400;600;700;900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Bruno+Ace&family=Girassol&family=Port+Lligat+Slab&family=Vollkorn+SC:wght@400;600;700;900&display=swap');
+
+/* Gaya untuk body halaman */
+body {
+    font-family: Arial, sans-serif; /* Font yang digunakan untuk body */
+    background-image: url(/Gambar/Background\ Login.jpg); /* Gambar latar belakang untuk halaman login */
+    background-size: cover; /* Menyusun gambar agar menutupi seluruh area */
+    height: 90vh; /* Mengatur tinggi halaman menjadi 90% dari viewport */
+    margin: 0; /* Menghilangkan margin default */
+}
+
+/* Gaya untuk judul utama */
+h1 {
+    text-align: center; /* Memusatkan teks judul */
+    font-family: "Bruno Ace", sans-serif; /* Font untuk judul utama */
+    font-size: 70px; /* Ukuran font untuk judul utama */
+    color: #ccc; /* Warna teks judul utama */
+}
+
+/* Gaya untuk form */
+form {
+    width: 380px; /* Lebar form */
+    margin: auto; /* Memusatkan form secara horizontal */
+    padding: 16px; /* Memberikan jarak di dalam form */
+    background-color: #ccc; /* Warna latar belakang form */
+    border-radius: 10px; /* Membuat sudut form menjadi bulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan efek bayangan pada form */
+    font-family: "Girassol", serif; /* Font untuk teks dalam form */
+    font-size: 20px; /* Ukuran font untuk teks dalam form */
+}
+
+/* Gaya untuk subjudul di dalam form */
+form h2 {
+    text-align: center; /* Memusatkan teks subjudul dalam form */
+}
+
+/* Gaya untuk tabel dalam form */
+table {
+    width: 100%; /* Lebar tabel 100% dari form */
+    margin: auto; /* Memusatkan tabel */
+}
+
+/* Gaya untuk field input */
+input[type="text"], input[type="password"] {
+    width: 100%; /* Lebar input field 100% dari tabel */
+    padding: 12px 20px; /* Memberikan jarak di dalam input field */
+    margin: 8px 0; /* Memberikan jarak di atas dan bawah input field */
+    display: inline-block; /* Menampilkan input field secara inline */
+    border: 1px solid #ccc; /* Garis batas input field */
+    border-radius: 4px; /* Membuat sudut input field menjadi bulat */
+    box-sizing: border-box; /* Menghitung padding dan border dalam total lebar dan tinggi */
+}
+
+/* Gaya untuk tombol login */
+.login-btn {
+    display: inline-block; /* Menampilkan tombol secara inline */
+    width: 20%; /* Lebar tombol */
+    background-color: #000000; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    padding: 7px 18px; /* Jarak dalam tombol */
+    margin: 8px 0; /* Jarak di atas dan bawah tombol */
+    text-align: center; /* Memusatkan teks dalam tombol */
+    text-decoration: none; /* Menghilangkan garis bawah pada teks */
+    border-radius: 4px; /* Membuat sudut tombol menjadi bulat */
+}
+
+/* Gaya saat tombol dihover */
+.login-btn:hover {
+    background-color: #555; /* Mengubah warna latar belakang saat mouse berada di atas tombol */
+}

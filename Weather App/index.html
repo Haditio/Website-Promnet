@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Menentukan karakter set yang digunakan adalah UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mengatur tampilan untuk perangkat mobile -->
+    <title>Weather App</title> <!-- Judul halaman yang ditampilkan di tab browser -->
+    <link rel="stylesheet" href="style.css"> <!-- Menghubungkan file CSS untuk styling -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/Gambar/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Gambar/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Gambar/apple-touch-icon.png">
+</head>
+<body>
+    <nav class="navbar"> <!-- Elemen navigasi utama -->
+        <div class="logo">HASR'WEBSITE</div> <!-- Logo atau nama website -->
+        <div class="nav-links"> <!-- Daftar tautan navigasi -->
+            <div class="nav-item"><a href="/Responsive Nav Bar/index.html">Home</a></div> <!-- Tautan untuk halaman Home -->
+            <div class="nav-item"><a class="active">Weather App</a></div> <!-- Tautan untuk Weather App dengan status aktif -->
+            <div class="nav-item"><a href="/Age Calculator/index.html">Age Calculator</a></div> <!-- Tautan untuk Age Calculator -->
+            <div class="nav-item"><a href="/Stopwatch/index.html">Stopwatch</a></div> <!-- Tautan untuk Stopwatch -->
+            <div class="nav-item"><a href="/Calculator/index.html">Calculator</a></div> <!-- Tautan untuk Calculator -->
+            <div class="nav-item"><a href="/Quiz App/index.html">Quiz App</a></div> <!-- Tautan untuk Quiz App -->
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()"> <!-- Ikon menu yang dapat diklik untuk menampilkan tautan -->
+            <i class="fa fa-bars"></i> <!-- Ikon menu hamburger dari font-awesome -->
+        </div>
+    </nav>
+    <h1>Weather App</h1> <!-- Judul utama halaman aplikasi cuaca -->
+    <div class="app-container"> <!-- Kontainer utama untuk aplikasi -->
+        <div class="search-container"> <!-- Kontainer untuk input pencarian -->
+            <input type="text" id="cityInput" placeholder="Masukkan nama kota"> <!-- Input untuk memasukkan nama kota -->
+            <button onclick="getWeather()">Cek Cuaca</button> <!-- Tombol untuk mengecek cuaca berdasarkan kota yang dimasukkan -->
+        </div>
+        <div id="weatherResult" class="weather-result"> <!-- Tempat untuk menampilkan hasil cuaca -->
+        </div>
+    </div>
+    <script src="script.js"></script> <!-- Menghubungkan file JavaScript -->
+</body>
+</html>

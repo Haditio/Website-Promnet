@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Bruno+Ace&family=Port+Lligat+Slab&family=Vollkorn+SC:wght@400;600;700;900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Bruno+Ace&family=Girassol&family=Port+Lligat+Slab&family=Vollkorn+SC:wght@400;600;700;900&display=swap');
+
+/* Gaya Umum untuk Halaman */
+body {
+    margin: 0; /* Menghilangkan margin default pada body */
+    text-align: center; /* Memusatkan teks di dalam body */
+    background-image: url(/Gambar/Background1.jpg); /* Gambar latar belakang untuk halaman */
+    background-size: cover; /* Menyusun gambar agar menutupi seluruh area */
+}
+
+.navbar {
+    display: flex; /* Menampilkan navbar dalam bentuk flexbox */
+    justify-content: space-between; /* Mengatur ruang antara logo dan tautan navigasi */
+    align-items: center; /* Menyelaraskan item secara vertikal di tengah */
+    background-color: gray; /* Warna latar belakang navbar */
+    padding: 20px 20px; /* Memberikan jarak di dalam navbar */
+    color: black; /* Warna teks dalam navbar */
+    font-family: "Bree Serif", serif; /* Font yang digunakan dalam navbar */
+}
+
+.logo {
+    font-size: 24px; /* Ukuran font untuk logo */
+    font-weight: bold; /* Membuat teks logo menjadi tebal */
+}
+
+.nav-links {
+    display: flex; /* Menampilkan tautan navigasi dalam bentuk flexbox */
+}
+
+.nav-item {
+    margin-left: 20px; /* Jarak antara item navigasi */
+}
+
+.nav-item a {
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    color: black; /* Warna teks tautan */
+    font-size: 18px; /* Ukuran font untuk tautan */
+}
+
+.nav-item a:hover {
+    color: white; /* Mengubah warna teks saat mouse berada di atas tautan */
+}
+
+/* Gaya untuk tautan yang aktif */
+.nav-item a.active {
+    color: white; /* Warna yang menonjol untuk menandakan halaman aktif */
+    font-weight: bold; /* Membuat tautan terlihat lebih tebal */
+}
+
+/* Gaya untuk Ikon Menu Responsif */
+.menu-icon {
+    display: none; /* Menyembunyikan ikon menu pada layar besar */
+    font-size: 24px; /* Ukuran font untuk ikon menu */
+    cursor: pointer; /* Mengubah kursor menjadi pointer saat hover di atas ikon menu */
+}
+
+.menu-icon i {
+    color: black; /* Warna ikon menu */
+}
+
+/* Media Queries untuk Desain Responsif */
+@media screen and (max-width: 768px) { /* Mengatur gaya untuk layar dengan lebar maksimum 768px */
+    .nav-links {
+        display: none; /* Menyembunyikan tautan navigasi pada layar kecil */
+        flex-direction: column; /* Menampilkan tautan secara vertikal */
+        position: absolute; /* Mengatur posisi menjadi absolut */
+        top: 60px; /* Mengatur posisi dari atas */
+        right: 0; /* Mengatur posisi dari kanan */
+        width: 100%; /* Lebar tautan 100% dari navbar */
+        background-color: #333; /* Warna latar belakang tautan */
+        text-align: center; /* Memusatkan teks dalam tautan */
+    }
+
+    .nav-item {
+        margin: 15px 0; /* Jarak antara item navigasi pada layar kecil */
+    }
+
+    .menu-icon {
+        display: block; /* Menampilkan ikon menu pada layar kecil */
+    }
+
+    .navbar {
+        flex-direction: row; /* Menampilkan navbar dalam baris */
+    }
+
+    .nav-links.active {
+        display: flex; /* Menampilkan tautan saat menu aktif */
+    }
+}
+
+h1 {
+    font-size: 53px; /* Ukuran font untuk judul utama */
+    margin-bottom: 35px; /* Jarak di bawah judul utama */
+    text-align: center; /* Memusatkan teks judul utama */
+    font-family: "Bruno Ace", sans-serif; /* Font untuk judul utama */
+    color: whitesmoke; /* Warna teks judul utama */
+}
+
+#quiz-container {
+    background-color: gray; /* Warna latar belakang untuk kontainer kuis */
+    padding: 38px; /* Jarak di dalam kontainer kuis */
+    width: 600px; /* Lebar kontainer kuis */
+    height: auto; /* Tinggi otomatis sesuai konten */
+    border-radius: 8px; /* Membuat sudut kontainer kuis menjadi bulat */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambahkan efek bayangan pada kontainer kuis */
+    text-align: center; /* Memusatkan teks dalam kontainer kuis */
+    margin: auto; /* Memusatkan kontainer kuis secara horizontal */
+    margin-bottom: 40px; /* Jarak di bawah kontainer kuis */
+    font-family: "Girassol", serif; /* Font untuk teks dalam kontainer kuis */
+    font-size: 30px; /* Ukuran font untuk teks dalam kontainer kuis */
+}
+
+.btn-container {
+    display: flex; /* Menampilkan kontainer tombol dalam bentuk flexbox */
+    flex-direction: column; /* Menampilkan tombol secara vertikal */
+    gap: 10px; /* Jarak antara tombol */
+    margin-top: 20px; /* Jarak di atas kontainer tombol */
+}
+
+.btn {
+    padding: 15px; /* Jarak di dalam tombol */
+    border: none; /* Menghilangkan border pada tombol */
+    border-radius: 5px; /* Membuat sudut tombol menjadi bulat */
+    cursor: pointer; /* Mengubah kursor menjadi pointer saat hover di atas tombol */
+    transition: background-color 0.3s; /* Menambahkan efek transisi pada perubahan warna latar belakang */
+    margin-top: 3px; /* Jarak di atas tombol */
+    background-color: whitesmoke; /* Warna latar belakang tombol */
+    color: black; /* Warna teks tombol */
+    font-family: "Girassol", serif; /* Font untuk teks dalam tombol */
+    font-size: 20px; /* Ukuran font untuk teks dalam tombol */
+}
+
+/* Hover dan selected memiliki warna yang sama */
+.btn:hover, .selected {
+    background-color: gold; /* Warna latar belakang saat hover atau saat terpilih */
+    color: black; /* Warna teks saat hover atau saat terpilih */
+}
+
+.navigation {
+    margin-top: 20px; /* Jarak di atas kontainer navigasi */
+    display: flex; /* Menampilkan navigasi dalam bentuk flexbox */
+    justify-content: space-between; /* Mengatur ruang antara item navigasi */
+}
+
+.result {
+    font-weight: bold; /* Membuat teks hasil menjadi tebal */
+    margin-top: 20px; /* Jarak di atas teks hasil */
+    color: black; /* Warna teks hasil */
+}
+
+#review-container {
+    background-color: #f4f4f9; /* Warna latar belakang untuk kontainer ulasan */
+    padding: 20px; /* Jarak di dalam kontainer ulasan */
+    border-radius: 8px; /* Membuat sudut kontainer ulasan menjadi bulat */
+    margin-top: 20px; /* Jarak di atas kontainer ulasan */
+    font-size: 18px; /* Ukuran font untuk teks dalam kontainer ulasan */
+}
+
+#review-questions {
+    text-align: left; /* Menyelaraskan teks dalam ulasan ke kiri */
+    font-size: 16px; /* Ukuran font untuk teks dalam pertanyaan ulasan */
+}

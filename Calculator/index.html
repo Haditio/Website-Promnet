@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Menentukan karakter set yang digunakan adalah UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mengatur tampilan untuk perangkat mobile -->
+    <title>Calculator</title> <!-- Judul halaman yang ditampilkan di tab browser -->
+    <link rel="stylesheet" href="style.css"> <!-- Menghubungkan file CSS untuk styling -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/Gambar/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Gambar/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Gambar/apple-touch-icon.png">
+</head>
+<body>
+    <nav class="navbar"> <!-- Elemen navigasi utama -->
+        <div class="logo">HASR'WEBSITE</div> <!-- Logo atau nama website -->
+        <div class="nav-links"> <!-- Daftar tautan navigasi -->
+            <div class="nav-item"><a href="/Responsive Nav Bar/index.html">Home</a></div> <!-- Tautan untuk halaman Home -->
+            <div class="nav-item"><a href="/Weather App/index.html">Weather App</a></div> <!-- Tautan untuk Weather App -->
+            <div class="nav-item"><a href="/Age Calculator/index.html">Age Calculator</a></div> <!-- Tautan untuk Age Calculator -->
+            <div class="nav-item"><a href="/Stopwatch/index.html">Stopwatch</a></div> <!-- Tautan untuk Stopwatch -->
+            <div class="nav-item"><a class="active">Calculator</a></div> <!-- Tautan Calculator dengan status aktif -->
+            <div class="nav-item"><a href="/Quiz App/index.html">Quiz App</a></div> <!-- Tautan untuk Quiz App -->
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()"> <!-- Ikon menu yang dapat diklik untuk menampilkan tautan -->
+            <i class="fa fa-bars"></i> <!-- Ikon menu hamburger dari font-awesome -->
+        </div>
+    </nav>
+    <h1>Calculator</h1> <!-- Judul utama halaman -->
+    <div class="calculator"> <!-- Kontainer untuk kalkulator -->
+        <input type="text" id="display" disabled> <!-- Tampilan untuk hasil perhitungan -->
+        <div class="buttons"> <!-- Kontainer untuk tombol-tombol kalkulator -->
+            <button onclick="clearDisplay()">C</button> <!-- Tombol untuk menghapus tampilan -->
+            <button onclick="deleteLast()">DEL</button> <!-- Tombol untuk menghapus karakter terakhir -->
+            <button onclick="appendCharacter('(')">(</button> <!-- Tombol untuk menambahkan tanda kurung buka -->
+            <button onclick="appendCharacter(')')">)</button> <!-- Tombol untuk menambahkan tanda kurung tutup -->
+
+            <button onclick="appendCharacter('7')">7</button> <!-- Tombol untuk angka 7 -->
+            <button onclick="appendCharacter('8')">8</button> <!-- Tombol untuk angka 8 -->
+            <button onclick="appendCharacter('9')">9</button> <!-- Tombol untuk angka 9 -->
+            <button onclick="appendCharacter('/')">÷</button> <!-- Tombol untuk operasi pembagian -->
+
+            <button onclick="appendCharacter('4')">4</button> <!-- Tombol untuk angka 4 -->
+            <button onclick="appendCharacter('5')">5</button> <!-- Tombol untuk angka 5 -->
+            <button onclick="appendCharacter('6')">6</button> <!-- Tombol untuk angka 6 -->
+            <button onclick="appendCharacter('*')">x </button> <!-- Tombol untuk operasi perkalian -->
+
+            <button onclick="appendCharacter('1')">1</button> <!-- Tombol untuk angka 1 -->
+            <button onclick="appendCharacter('2')">2</button> <!-- Tombol untuk angka 2 -->
+            <button onclick="appendCharacter('3')">3</button> <!-- Tombol untuk angka 3 -->
+            <button onclick="appendCharacter('-')">-</button> <!-- Tombol untuk operasi pengurangan -->
+
+            <button onclick="appendCharacter('0')">0</button> <!-- Tombol untuk angka 0 -->
+            <button onclick="appendCharacter('.')">.</button> <!-- Tombol untuk angka desimal -->
+            <button onclick="calculate()">=</button> <!-- Tombol untuk menghitung hasil -->
+            <button onclick="appendCharacter('+')">+</button> <!-- Tombol untuk operasi penjumlahan -->
+        </div>
+    </div>
+    <script src="script.js"></script> <!-- Menghubungkan file JavaScript -->
+</body>
+</html>

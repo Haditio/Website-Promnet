@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Menentukan karakter set yang digunakan adalah UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mengatur tampilan untuk perangkat mobile -->
+    <title>Quiz App</title> <!-- Judul halaman yang ditampilkan di tab browser -->
+    <link rel="stylesheet" href="style.css"> <!-- Menghubungkan file CSS untuk styling -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/Gambar/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Gambar/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Gambar/apple-touch-icon.png">
+</head>
+<body>
+    <nav class="navbar"> <!-- Elemen navigasi utama -->
+        <div class="logo">HASR'WEBSITE</div> <!-- Logo atau nama website -->
+        <div class="nav-links"> <!-- Daftar tautan navigasi -->
+            <div class="nav-item"><a href="/Responsive Nav Bar/index.html">Home</a></div> <!-- Tautan untuk halaman utama -->
+            <div class="nav-item"><a href="/Weather App/index.html">Weather App</a></div> <!-- Tautan untuk Weather App -->
+            <div class="nav-item"><a href="/Age Calculator/index.html">Age Calculator</a></div> <!-- Tautan untuk Age Calculator -->
+            <div class="nav-item"><a href="/Stopwatch/index.html">Stopwatch</a></div> <!-- Tautan untuk Stopwatch -->
+            <div class="nav-item"><a href="/Calculator/index.html">Calculator</a></div> <!-- Tautan untuk Calculator -->
+            <div class="nav-item"><a class="active">Quiz App</a></div> <!-- Tautan untuk Quiz App dengan status aktif -->
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()"> <!-- Ikon menu yang dapat diklik untuk menampilkan tautan -->
+            <i class="fa fa-bars"></i> <!-- Ikon menu hamburger dari font-awesome -->
+        </div>
+    </nav>
+    <h1>Quiz App</h1> <!-- Judul utama halaman -->
+
+    <div id="quiz-container"> <!-- Kontainer utama untuk kuis -->
+        <button id="start-btn" class="btn">Start Quiz</button> <!-- Tombol untuk memulai kuis -->
+        
+        <div id="question-container" style="display: none;"> <!-- Kontainer untuk pertanyaan, disembunyikan secara default -->
+          <div id="question"></div> <!-- Elemen untuk menampilkan pertanyaan -->
+          <div id="answer-buttons" class="btn-container"></div> <!-- Kontainer untuk tombol jawaban -->
+        </div>
+    
+        <div class="navigation" style="display: none;"> <!-- Kontainer untuk navigasi kuis, disembunyikan secara default -->
+          <button id="back-btn" class="btn">Back</button> <!-- Tombol untuk kembali ke pertanyaan sebelumnya -->
+          <button id="next-btn" class="btn">Next</button> <!-- Tombol untuk melanjutkan ke pertanyaan berikutnya -->
+        </div>
+    
+        <div id="result-container"></div> <!-- Kontainer untuk menampilkan hasil kuis -->
+        <button id="restart-btn" class="btn" style="display: none;">Restart Quiz</button> <!-- Tombol untuk memulai ulang kuis, disembunyikan secara default -->
+        
+        <div id="review-container" style="display: none;"> <!-- Kontainer untuk meninjau jawaban, disembunyikan secara default -->
+          <h2>Review Answers</h2> <!-- Judul untuk bagian tinjauan jawaban -->
+          <div id="review-questions"></div> <!-- Elemen untuk menampilkan pertanyaan yang ditinjau -->
+        </div>
+    </div>
+    
+    <script src="script.js"></script> <!-- Menghubungkan file JavaScript -->
+</body>
+</html>
